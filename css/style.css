@@ -8,6 +8,21 @@
     box-sizing: border-box; /*Alinhados na borda da caixa*/
 }
 
+li{
+    list-style-type: none; /*retira as bolinha dos li*/
+}
+
+/*Criação de cores no root do CSS*/
+:root{
+    --blue: #00008B;
+    --gray: #555555;
+    --skyBlue: #00BFFF;
+    --silver: #C0C0C0;
+    --red: #FF0000;
+    --white: #FFFFFF;
+    --darkGray: #959595;
+}
+
 /*Header*/
 .main-header{
     background-image: url(background-image.png); /*Adiciona imagem no fundo*/
@@ -31,9 +46,9 @@
 }
 
 .nav-item{
-    list-style-type: none; /*Remove os circulos padrões dos elementos li*/
-    text-transform: uppercase; /*Coloca todos os elementos */
-    color: #00008B;
+    /* list-style-type: none; Remove os circulos padrões dos elementos li => retirado do códigoe usado na LI*/
+    text-transform: uppercase; /*Coloca todos os elementos com letras maiúsculas*/
+    color: var(--blue);
 }
 
 .nav-item a{
@@ -61,7 +76,7 @@ hr{
 }
 
 .about-title{
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif; /*Utiliza a fonte importada*/
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
@@ -70,6 +85,48 @@ hr{
 
 .about-image{
     float: left;
-    margin: 0 20px 10px 0; 
+    margin: 0 20px 10px 0;
+     /*Diminui o tamanho das imagens*/
+    width: 200px;
+    height: auto; /*Evita a distorção da imagem*/
 }
 
+.about-description{
+    color: var(--gray); /*Utilizada variavél de cor criada no root*/
+    text-align: justify; /*Justifica os texto*/
+}
+
+/*Rodapé do site*/
+.main-footer{
+    background-color: var(--skyBlue);
+    padding: 15px 0;
+    /* position: sticky; */
+}
+
+.main-footer-container{
+    display: flex; /*Deixa tudo na mesma linha*/
+    align-items: center; /*Alinha todos os elementos*/
+    justify-content: space-between; /*Coloca o nome de um lado e lista de icones do outro*/
+}
+
+.title-smaller{
+    font-family: "Raleway", sans-serif;
+    color: var(--blue);
+    font-size: 26px;
+}
+
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-item{
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;
+}
+
+.footer-item + .footer-item{
+    margin-left: 16px; /*Aplica na mesma class seguindo me diante, até chegar */
+}
