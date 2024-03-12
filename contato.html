@@ -18,89 +18,93 @@
     <!--Área do Site-->
     <body>
         <!--Cabeçalho-->
-        <header>
+        <header class="main-header">
             <!--Navegação-->
-            <nav>
+            <nav class="main-nav container">
                 <!--Lista não Ordenada-->
-                <ul>
+                <ul class="header-list-container">
                     <!--Item na Lista-->
-                    <li><!--Logotipo do Site-->
+                    <li class="nav-item"><!--Logotipo do Site-->
                         <!---->
                         <a href="index.html">
                             <img src="images/logo.png" alt="logo" height="100" width="100">
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="loja.html">Loja</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="contato.html">Contato</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="sobre.html">Sobre</a>
                     </li>
                 </ul>
             </nav>
+            <hr>
         </header>
 
         <main>
-            <h2>Contato</h2>
-            <p>Os campos  com * são de preenchimento obrigatório!</p>
+            <h2 class="title-median">Contato</h2>
+            <p class="contact-text">Os campos  com * são de preenchimento obrigatório!</p>
 
             <!--Corpo do Formulário-->
-            <form>
+            <form class="contact">
                 <!--Campo do Formulário-->
-                <label >
-                    E-mail
-                    <input type="texto" required>
+                <label class="contact-label">
+                    E-mail*
+                    <input class="contact-field" type="texto" required>
                 </label>
 
-                <label >
-                    Nome
-                    <input type="texto" required>
+                <label class="contact-label">
+                    Nome*
+                    <input class="contact-field" type="texto" required>
                 </label>
 
-                <label >
-                    Assunto
-                    <select>
+                <label class="contact-label">
+                    Assunto*
+                    <select class="contact-field">
+                        <option>NewsLetter</option>
                         <option>Dúvidas</option>
                         <option>Sugestões</option>
                         <option>Críticas</option>
                     </select>
                 </label>
 
-                <label >
-                    Mensagem
-                    <textarea required></textarea>
+                <label class="contact-label">
+                    Mensagem*
+                    <textarea class="contact-field" required></textarea>
                 </label>
-                <button type="button">Enviar</button>
+                <button class="button-form" type="button">Enviar</button>
             </form>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.680144634077!2d-41.78073272430784!3d-2.908118939551067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2fe7b0a81c43%3A0x46b78ca8ceae1148!2sSENAI%20Servi%C3%A7o%20Nacional%20de%20Aprendizagem%20Industrial!5e0!3m2!1spt-BR!2sbr!4v1709729702573!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.680144634077!2d-41.78073272430784!3d-2.908118939551067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ec2fe7b0a81c43%3A0x46b78ca8ceae1148!2sSENAI%20Servi%C3%A7o%20Nacional%20de%20Aprendizagem%20Industrial!5e0!3m2!1spt-BR!2sbr!4v1709729702573!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </main>
 
-        <footer>
-            <div>
-                <h3>Vendas Livres Store - Gabriele Gomes 2024</h3>
-                <ul>
-                    <li>
+        <footer class="main-footer">
+            <div class="footer-container">
+                <h3 class="title-smaller">Vendas Livres Store - Gabriele Gomes 2024</h3>
+                <ul class="footer-container">
+                    <li class="footer-item">
                         <a href="https://www.facebook.com/" target="_blank">
                             <img src="images/facebook.svg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.instagram.com/" target="_blank">
                             <img src="images/instagram.svg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.spotify.com/" target="_blank">
                             <img src="images/spotify.svg" alt="">
                         </a>
                     </li>
 
-                    <li>
+                    <li class="footer-item">
                         <a href="https://www.youtube.com/" target="_blank">
                             <img src="images/youtube.svg" alt="">
                         </a>
