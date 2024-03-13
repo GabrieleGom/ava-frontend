@@ -1,5 +1,5 @@
 /*Importa fonte do google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 
 /* html, body{
@@ -195,4 +195,42 @@ textarea.contact-field{
 .button-form:hover{
     background-color: var(--white);
     color: var(--blue);
+}
+
+.contact-maps{
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+
+/*Index / Página Inicial*/
+.title-header{
+    font-family: "Madimi One", sans-serif;
+    color: var(--blue);
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+
+.title-large{
+    font-family: "Rock Salt", cursive;
+    font-size: 38px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.description{
+    color: var(--gray);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.emphasis{
+    background-color: var(--skyBlue);
+    color: var(--blue);
+    border-radius: 50px;
+}
+
+.product-container{
+    
 }
